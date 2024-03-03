@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #f1fbff;
+  transition: 0.5s;
+}
+.calendar {
+  padding: 20px 40px;
+}
+.months-container {
+  justify-content: center;
+  gap: 40px;
+}
+.calendar .months-container .month-container {
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px;
+  min-width: 280px;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.1);
+}
+.calendar .month-container .day-header {
+  font-weight: 600;
+}
+.calendar table.month th.month-title {
+  color: #5a8990;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+table.month {
+  color: #444;
+  font-weight: 600;
+}
+table.month td:first-child,
+table.month td:last-child,
+table.month thead tr:nth-child(2) th:first-child,
+table.month thead tr:nth-child(2) th:last-child {
+  color: rgb(255, 72, 72);
+}
+table.month td.day .day-content:hover {
+  background: rgb(255, 72, 72);
+  color: #fff;
+  border-radius: 7px;
+  transition: 0.1s;
+  cursor: default;
+}
+.calendar table.month td.day .day-content {
+  padding: 6px 8px;
+}
+.calendar .calendar-header {
+  border: none;
+  color: #666;
+}
+.calendar .calendar-header table th:hover {
+  background: transparent;
+}
+.calendar .calendar-header .year-title {
+  font-size: 3em;
+}
+.calendar .calendar-header .year-neighbor {
+  font-size: 2em;
+}
+.calendar .calendar-header .year-neighbor2 {
+  font-size: 2em;
+}
+.calendar .calendar-header .next:hover {
+  position: relative;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transition: 0.2s;
+}
+.calendar .calendar-header .prev:hover {
+  position: relative;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transition: 0.2s;
+}
